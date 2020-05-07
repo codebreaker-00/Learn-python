@@ -1,0 +1,37 @@
+msg = "Hello to the World of Python" #string_type
+
+"""
+you can comment a single line using '#'  and multiline using three "double" or 'single' quotes
+
+comment-1
+comment-2
+.
+.
+.
+comment-n
+"""
+
+x = 1 #int_type
+y = 2.5 #float_type
+is_cool = True #bool_type #also note capital 'T'
+
+
+'''
+the following operations will be based on the operations which can be done on a string 
+'''
+
+print(msg.replace('World','everyone')) #it is case sensitive so be alert
+
+sub = 'h'
+
+print(msg.count(sub)) #prints the number of times the substring 'h' is present in it
+print(msg.startswith('Hello')) #it's just a bool to check if string actually starts with this
+print(msg.endswith('n')) #againn a bool
+print(msg.split()) #divides msg into an array of char
+print(msg.find('r')) #finds he first 'r' in the string and returns its position
+print(msg.isalnum()) #bool to check if string is alphanumeric
+print(msg.isalpha()) #bool to check if string has only the alphabets in it
+print(msg.isnumeric()) #bool to check if string has only numbers in it
+
+#the alphabets and numericals don't include ' ' (spaces) and hence for the given msg it would all be false 
+# but, if msg would have been 'helloworldofpython' then both isalpha and isalphanum would be true 
